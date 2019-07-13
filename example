@@ -1,0 +1,16 @@
+var correctSubreddit = subreddit;
+var incorrectSubreddit;
+if (correctSubreddit == "nottheonion") {
+  incorrectSubreddit = "TheOnion";
+} else {
+  incorrectSubreddit = "nottheonion";
+}
+
+document.getElementById(correctSubreddit).onclick=function() {
+  alert("Correct!");
+  newArticle();
+};
+document.getElementById(incorrectSubreddit).onclick=function() {
+  alert("Wrong!");
+  newArticle();
+};
